@@ -3,3 +3,7 @@ Control the font-size of the bullet text from an external sheet to be 24px.
 
 
 TASK-2 : create a css class that applies background image to a table data element 
+
+TASK-3: There are  2 li elements. One has attr1=val1 and another attr1=val2
+as thier attributes.
+Only the li element with  attr1=val2 should be in grey background 
