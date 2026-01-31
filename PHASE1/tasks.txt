@@ -1,0 +1,2 @@
+TASK-1 : Create a bullet list where the list items should be red colored text, and the background color of the whole list is grey and background color of indivual bullet text is yellow. 
+Control the font-size of the bullet text from an external sheet to be 24px.
