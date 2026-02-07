@@ -5,28 +5,46 @@
 <head>
     <script>
 
-        let x1=5;
-        let x2="hello";
+        let x1 = 5;  // In Java int x1=5
+        let x2 = "hello";
 
         let x3;
-        let y1=10;
+        let y1 = 10;
 
 
-        x3="hi";
+        x3 = "hi";
 
         // alert(x1);
         // alert(x3);
-        x1=500;
+        x1 = 500;
         console.log("x1 is " + x1); // 500
         console.log("x2 is " + x2);
 
-        const a1=100;
+        const a1 = 100;
         console.log("1. a1 is " + a1); 100
 
-        a1=1000;
-        console.log("2. a1 is " + a1); 1000
+        // a1=1000; //ERROR - you cannot reassign  
+        console.log("2. a1 is " + a1); // not 1000 it is 100
+    </script>
+
+    <script>
+        document.writeln("3. a1 is " + a1);
     </script>
 </head>
 
+<body>
+    MESSAGES: <span id="messages"> AAA </span>
+    <br>
+
+    <script>
+        if(a1===500)
+       document.getElementById("messages").innerText="Welcome to India!";
+    </script>
+
+    <script>
+         document.getElementById("messages1").innerText="Welcome to Asia!";
+    </script>
+
+</body>
 
 </html>
