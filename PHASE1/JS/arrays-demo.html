@@ -63,3 +63,21 @@
     // TASK-5 : use colors1.forEach to print the length of the individual colors 
 
 </script>
+
+<script>
+    // TASK-5 SOLUTION: 
+    let mycars = new Array();
+    mycars[0] = "Maruti";
+    mycars[1] = "Skoda";
+    mycars[2] = "BMW";
+    console.log(mycars);
+    console.log(typeof mycars);
+    console.log(Array.isArray(mycars));
+    
+    
+    mycars.forEach((car, index) => {
+        console.log(
+            `${index + 1}: Name is ${car.toUpperCase()} --> Length of car name - ${car.length}`
+        );
+    });
+</script>
