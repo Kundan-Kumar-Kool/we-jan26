@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 
 <script>
-console.log("approach to create an array using [ ] brackets ");
+    console.log("approach to create an array using [ ] brackets ");
 
-let colors1 = [ "green", "yellow", "blue", "white", "grey","red" ];
+    let colors1 = ["green", "yellow", "blue", "white", "grey", "red"];
 
-console.log("colors1" , colors1);
-console.log("colors1[0]" ,colors1[0]);
+    console.log("colors1", colors1);
+    console.log("colors1[0]", colors1[0]);
 </script>
 
 
 <script>
-// another approach to create an array
-console.log("another approach to create an array using Array object ");
+    // another approach to create an array
+    console.log("another approach to create an array using Array object ");
 
 
-let colors2 = new Array();
-colors2[0]="green";
-colors2[1]="yellow";
+    let colors2 = new Array();
+    colors2[0] = "green";
+    colors2[1] = "yellow";
 
-console.log("colors2" ,colors2);
-console.log("colors2[0]" ,colors2[0]);
+    console.log("colors2", colors2);
+    console.log("colors2[0]", colors2[0]);
 
 </script>
 
 <script>
     // TASK- 4: create an array number1 of some 5 numbers.
     // create a function to print the last number of a given array. apply it on number1 array.
+</script>
+
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    function printArrayNum(param1) {
+        console.log("last number of the given array is ", param1[param1.length - 1]);
+    }
+    printArrayNum(arr);
+</script>
+
+<script>
+    let cars = new Array();
+    cars[0] = "Maruti";
+    cars[1] = "Skoda";
+    cars[2] = "BMW";
+    console.log(cars);
+    console.log(typeof cars);
+    console.log(Array.isArray(cars));
+    cars.forEach((color, index) => {
+        console.log(`${index + 1}: ${color}`);
+    });
+</script>
+
+
+<script>
+    console.log(" array methods demo \n");
+    // Push Pop Unshift Shift
+
+
+    // foreach methods
+    colors1.forEach(item => console.log(item));
+    colors1.forEach(item => console.log(item.toUpperCase()));
+
+    // TASK-5 : use colors1.forEach to print the length of the individual colors 
+
 </script>
