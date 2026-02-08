@@ -73,8 +73,8 @@
     console.log(mycars);
     console.log(typeof mycars);
     console.log(Array.isArray(mycars));
-    
-    
+
+
     mycars.forEach((car, index) => {
         console.log(
             `${index + 1}: Name is ${car.toUpperCase()} --> Length of car name - ${car.length}`
@@ -84,46 +84,47 @@
 
 <script>
     // demo filter method
-   let colorsStartingWithW= colors1.filter( item => item.startsWith("w") || item.startsWith("g"));
-   console.log("colorsStartingWithW = ",colorsStartingWithW)
+    let colorsStartingWithW = colors1.filter(item => item.startsWith("w") || item.startsWith("g"));
+    console.log("colorsStartingWithW = ", colorsStartingWithW)
 
 </script>
 
 <script>
     // demo map  method
-   let colors1InUpperCase = colors1.map( item => item.toUpperCase() );
-   console.log("colors1InUpperCase = ",colors1InUpperCase);
-   
+    let colors1InUpperCase = colors1.map(item => item.toUpperCase());
+    console.log("colors1InUpperCase = ", colors1InUpperCase);
+
 </script>
 
 <script>
-// join method
-console.log(colors1.join());
-console.log(colors1.join("-"));
+    // join method
+    console.log(colors1.join());
+    console.log(colors1.join("-"));
 
 </script>
 
 <script>
     // find method
-    colors1.find ( item => item==="green"); // returns 'green' 
-    colors1.find ( item => item==="Green"); // returns undefined
+    colors1.find(item => item === "green"); // returns 'green' 
+    colors1.find(item => item === "Green"); // returns undefined
 </script>
 
 <script>
-const students = [
-  { id: 1, name: "Anu", marks: 72, dept: "Math" },
-  { id: 2, name: "Kiran", marks: 45, dept: "Computer Science" },
-  { id: 3, name: "Ravi", marks: 88, dept: "Computer Science" },
-  { id: 4, name: "Meena", marks: 30, dept: "Physics" }
-];
+    const students = [
+        { id: 1, name: "Anu", marks: 72, dept: "Math" },
+        { id: 2, name: "Kiran", marks: 45, dept: "Computer Science" },
+        { id: 3, name: "Ravi", marks: 88, dept: "Computer Science" },
+        { id: 4, name: "Meena", marks: 30, dept: "Physics" }
+    ];
 
-// Task 1: Find student with id = 3
+    // Task 1: Find student with id = 3
+    console.log(students.find(item => item.id == 3));
 
+    // Task 2: Filter students with marks >= 50
+    console.log(students.filter(item => item.marks >= 50));
 
-// Task 2: Filter students with marks >= 50
-
-
-// Task 3: Filter Computer Science students
+    // Task 3: Filter Computer Science students
+    console.log(students.filter(item => item.dept === 'Computer Science'));
 
 
 </script>
