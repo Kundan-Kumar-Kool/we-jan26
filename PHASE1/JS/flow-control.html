@@ -97,7 +97,18 @@
         console.log("2-x is ", x);
     }
 
- // Task- create a while loop that iterates from x=5 to x=15 and prints only even numbers on the console.
- // DO NOT USE IF/ELSE
+    // Task- create a while loop that iterates from x=5 to x=15 and prints only even numbers on the console.
+    // DO NOT USE IF/ELSE
 
+</script>
+
+<script>
+    //Problem - While Loop (5 → 15) Printing Only Even Numbers Using Bitwise
+    let x = 5;
+    while (x <= 15) {
+        if ((x & 1) === 0) {
+            console.log(x); // Print only even numbers
+        }
+        x++;
+    }
 </script>
