@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<script>
+
+    var x = 10;
+
+    console.log("1. x outside func1 ", x);
+
+    function func1() {
+        var y1 = 15;
+
+        console.log("x inside func1 ", x);
+
+        console.log("y1 inside func1 ", y1);
+
+        {
+            var z=25;
+            console.log("z inside func1 and inside its block ", z);
+        }
+         console.log("z inside func1 and outside its block ", z);
+
+    }
+
+    console.log("2. x outside func1 ", x);
+
+    func1();
+    // console.log("y outside func1 ", y); // ERROR
+
+</script>
+
+
+<script>
+    console.log("using let keyword ... ");
+
+    let x1 = 10;
+
+    console.log("1. x1 outside func1 ", x1);
+
+    function func1() {
+        let y1 = 15;
+
+        console.log("x1 inside func1 ", x1);
+
+        console.log("y1 inside func1 ", y1);
+
+        {
+            let z1=25;
+            console.log("z1 inside func1 and inside its block ", z1);
+        }
+         console.log("z1 inside func1 and outside its block ", z1);
+
+    }
+
+    
+
+    func1();
+    // console.log("y outside func1 ", y); // ERROR
+
+</script>
+
+
+
+
+
+</html>
