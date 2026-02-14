@@ -22,17 +22,38 @@
     greeting2(student1);
 
 
-    function greeting3(stud) {
-        console.log("<greeting2> Hello " + stud.name + " .You are of " + stud.age + " years old.");
-        console.log("card - ", stud.card_no);
+</script> function greeting3(stud) {
+console.log("<greeting2> Hello " + stud.name + " .You are of " + stud.age + " years old.");
+    console.log("card - ", stud.card_no);
     }
 
     greeting3(student1);
 
-</script>
+    </script>
 
-// Prefer the greeting2 approach of writing functions as the function here has access to only name and age and
-// nothing else from the object passed it.
+    <script>
+        // Prefer the greeting2 approach of writing functions as the function here has access to only name and age and
+        // nothing else from the object passed it.
 
-// TASK-4: Create a function that accepts age of a Student and returns his/her eligibility to vote
-// voting age is 18 years.
+        // TASK-4: Create a function that accepts age of a Student and returns his/her eligibility to vote
+        // voting age is 18 years.
+        //SOLUTION-1
+
+        function checkVotingEligibility1(age) {
+            if (age >= 18) {
+                return "Eligible to vote";
+            } else {
+                return "Not eligible to vote";
+            }
+        }
+
+        //SOLUTION-2
+        function checkVotingEligibility2( { age } ) {
+            if (typeof age !== "number" || age < 0) {
+                return "Invalid age";
+            }
+            return age >= 18
+                ? "Eligible to vote"
+                : "Not eligible to vote";
+        }
+    </script>
