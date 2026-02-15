@@ -12,6 +12,8 @@ Only the li element with  attr1=val2 should be in grey background
 CLASSES:
 TASK-10: 
 Create an Employee class with name,designation and salary properties.
-Let's it also have methods - computeTax(rate)
+Let it also have 1 method - computeTax(rate)
 Then also create a function that will compare 2 employees's salary and print the Employee name who had higher salary.
+
+
 

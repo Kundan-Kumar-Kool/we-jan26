@@ -6,6 +6,11 @@
         this.age = age;
         this.card_no=cn;
 
+        //actions
+        this.study = function () {
+            console.log( "I am studying... ");
+        }
+
     };
 
 
@@ -16,6 +21,7 @@
     console.log("student1", student1);
 
     console.log("student1's name", student1.name);
+    student1.study();
 
 
     let student2 = new Student("Madana", 44,  "2222");
