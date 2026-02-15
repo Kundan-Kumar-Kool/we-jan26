@@ -48,7 +48,7 @@ console.log("<greeting2> Hello " + stud.name + " .You are of " + stud.age + " ye
         }
 
         //SOLUTION-2
-        function checkVotingEligibility2( { age } ) {
+        function checkVotingEligibility2({ age }) {
             if (typeof age !== "number" || age < 0) {
                 return "Invalid age";
             }
@@ -56,4 +56,35 @@ console.log("<greeting2> Hello " + stud.name + " .You are of " + stud.age + " ye
                 ? "Eligible to vote"
                 : "Not eligible to vote";
         }
+    </script>
+
+
+    <script>
+        console.log("Object updation/copying the properties of an existing into a new one");
+        // updating object properties.
+        /*
+        let student1 = {
+        name: "Jonas",
+        age: 35,f
+        email: "Jonas@example.com",
+        "card_no": 23256735267
+    };
+    */
+
+        console.log("student1", student1);
+
+        let student2 = {
+            ...student1
+        }
+
+        console.log("student2", student2);
+
+
+        let student3 = {
+            ...student1,
+            name:"Gavin",
+            age:45
+        }
+
+        console.log("student3", student3);
     </script>
