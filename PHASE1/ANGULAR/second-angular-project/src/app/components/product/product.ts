@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from '../../models/product';
 
 @Component({
@@ -9,10 +9,14 @@ import { Product } from '../../models/product';
 })
 export class ProductComponent {
 
-  product!: Product;
+  @Input("product") product!: Product;
 
   constructor(){
-    this.product = new Product(1,"Dell Monitor",10000, "", true, "", 1000 );
+    
+  }
+
+  ngOnInit():void {
+
   }
 
 }
