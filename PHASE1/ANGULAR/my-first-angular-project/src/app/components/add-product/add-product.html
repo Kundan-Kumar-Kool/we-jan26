@@ -24,8 +24,22 @@
 
     </div>
 
+    <div>
+        <label>Description</label>
+        <textarea rows="4" formControlName="description" placeholder="Enter product description">
+</textarea>
+        <div *ngIf="f['description'].touched && f['description'].invalid">
+            <small *ngIf="f['description'].errors?.['minlength']">
+                Minimum 10 characters required
+            </small>
+            <small *ngIf="f['description'].errors?.['maxlength']">
+                Maximum 20 characters allowed
+            </small>
+        </div>
+    </div>
 
-    <button type="submit" >
+
+    <button type="submit">
         Add Product
     </button>
 

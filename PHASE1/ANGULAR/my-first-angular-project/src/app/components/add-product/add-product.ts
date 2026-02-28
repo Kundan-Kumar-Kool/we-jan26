@@ -12,14 +12,14 @@ export class AddProductComponent {
 
   productForm!: FormGroup;
 
-
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
 
     this.productForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
-      price: [0, [Validators.required, Validators.min(100)]]
+      price: [0, [Validators.required, Validators.min(100)]],
+      description: ['', [Validators.minLength(10), Validators.maxLength(20)]],
     });
 
   }
