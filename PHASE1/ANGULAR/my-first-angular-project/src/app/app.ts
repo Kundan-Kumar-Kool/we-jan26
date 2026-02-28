@@ -3,10 +3,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProductComponent } from './components/product/product';
 import { UserComponent } from './components/user/user';
+import { AddProductComponent } from './components/add-product/add-product';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, ProductComponent, UserComponent],
+  imports: [RouterOutlet, CommonModule, ProductComponent, UserComponent, AddProductComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
