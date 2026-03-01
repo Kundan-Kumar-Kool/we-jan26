@@ -34,20 +34,18 @@ export class AddProductComponent {
   }
 
   onSubmit(): void {
-     console.log("FIRST LOG Inside  onSubmit of Add product Component:");
     // if (this.productForm.valid) {
-      console.log("Product Added:", this.productForm.value);
-      let id = this.getRandomInt(100, 1000);
-      let name = this.f['name']?.value;
-      let price = this.f['price']?.value;
+    console.log("Product Added:", this.productForm.value);
+    let id = this.getRandomInt(100, 1000);
+    let name = this.f['name']?.value;
+    let price = this.f['price']?.value;
 
-      let prod = new Product(id, name, price);
-      this.productService.addProduct(prod);
+    let prod = new Product(id, name, price);
+    this.productService.addProduct(prod);
 
-      this.productForm.reset();
+    this.productForm.reset();
     //}
 
-    console.log("LAST LOG Inside  onSubmit of Add product Component:");
   }
 
 
@@ -56,3 +54,5 @@ export class AddProductComponent {
   }
 
 }
+
+// TASK-2: Implement delete product function in your product list component
