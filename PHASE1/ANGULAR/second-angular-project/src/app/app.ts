@@ -25,4 +25,6 @@ export class App {
     this.products.push(new Product(1, "Dell Monitor", 10000, "", true, "", 1000));
     this.products.push(new Product(2, "HP Printer", 7000, "", true, "", 1000));
   }
+
+  
 }
