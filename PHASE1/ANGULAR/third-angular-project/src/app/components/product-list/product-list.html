@@ -6,7 +6,7 @@
         <tr *ngFor="let product of products">
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
-            <td><button (click)="deleteProduct(product.price)" > DELETE </button> </td>
+            <td><button (click)="deleteProduct(product.id)" > DELETE </button> </td>
         </tr>
     </table>
 

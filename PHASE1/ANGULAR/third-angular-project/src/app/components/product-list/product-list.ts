@@ -22,6 +22,10 @@ export class ProductListComponent {
   ngOnInit(): void {
     this.products = this.productService.getProducts();
   }
+
+  deleteProduct(id:number) : void{
+    //TODO
+  }
 }
 
 // TASK-1: Create a User model, UserService and an UserComponent.
