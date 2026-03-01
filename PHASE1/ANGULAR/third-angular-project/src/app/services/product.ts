@@ -21,5 +21,10 @@ export class ProductService {
   getProduct(id:number) : Product{
     return this.products[id];
   }
+
+  addProduct(product:Product):void {
+    console.log ("INSIDE addProduct of Product service");
+    this.products.push(product);
+  }
   
 }

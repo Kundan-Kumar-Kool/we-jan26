@@ -1,20 +1,17 @@
 <div style="border:solid 1px rgb(245, 35, 186)">
+    <br/>
 
-    <!-- <table border="1">
+     <!-- Approach 1 -->
+    <table border="1">
         <tr *ngFor="let product of products">
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
         </tr>
-
-
-    </table> -->
-
-    <table border="1">
-        <tr *ngFor="let prod of products">
-            <product [id]="prod.id" />
-        </tr>
-
-
     </table>
 
+   <!-- Approach 2 -->
+        <!-- <div *ngFor="let prod of products">
+            <product [id]="prod.id" />
+        </div> -->
+<br/>
 </div>
