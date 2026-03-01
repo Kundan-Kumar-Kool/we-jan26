@@ -13,10 +13,8 @@ import { ProductComponent } from '../product/product';
 export class ProductListComponent {
 
   products!: Product[];
-  productService!: ProductService;
 
-  constructor(productServ: ProductService) {
-    this.productService = productServ;
+  constructor(private productService: ProductService) {
   }
 
   ngOnInit(): void {
@@ -24,9 +22,9 @@ export class ProductListComponent {
   }
 
   deleteProduct(id:number) : void{
-    //TODO
+    this.productService.deleteProduct(id);
+    this.products = this.productService.getProducts();
   }
 }
 
-// TASK-1: Create a User model, UserService and an UserComponent.
-// Display User name in top right corner of the home page (App.html)
+

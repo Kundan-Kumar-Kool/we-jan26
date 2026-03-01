@@ -26,5 +26,10 @@ export class ProductService {
     console.log ("INSIDE addProduct of Product service");
     this.products.push(product);
   }
+
+  deleteProduct(id:number):void {
+    console.log ("INSIDE deleteProduct of Product service");
+    this.products = this.products.filter( item => item.id !== id);
+  }
   
 }
