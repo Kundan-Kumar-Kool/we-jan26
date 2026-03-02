@@ -1,0 +1,2 @@
+// TASK-1: Create a User model, UserService and an UserComponent.
+// Display User name in top right corner of the home page (App.html)
